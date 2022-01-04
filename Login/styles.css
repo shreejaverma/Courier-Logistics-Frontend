@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Oswald:wght@300&display=swap');
+
+html, body { width:100%; height:100%; margin:0; padding:0; background-color: #0A1931; font-family: 'Montserrat', sans-serif; overflow-x: hidden;}
+
+.navbarlogo{
+    border-radius: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #0A1931;
+    font-weight: bold;
+}
+
+.login-form-2{
+    padding: 5%;
+    background-color: #efefef;
+    box-shadow: 0 5px 8px 0 rgb(71, 96, 114), 0 9px 26px 0 rgb(71, 96, 114);
+    margin: 7% 25%;
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #0a1931;
+    margin: 4%;
+    font-weight: 900;
+}
+.login-container form{
+    padding: 50%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #efefef;
+    background-color: #0a1931;
+    margin: 2% 25%;
+}
+.login-form-2 .Signup{
+    color: #0a1931;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    left: 15%;
+}
+
+.form-group{
+    padding: 1% 20% 1% 20%
+}
+
+@media  screen and (max-width:800px) {
+    .login-form-2{
+        position: absolute;
+    left: 10%;
+    top: 30%;
+    margin: 0;
+    width: 80%;
+    height: 50%;
+    }
+
+    form{
+        padding-top: 15%;
+    }
+    .form-group{
+        padding: 5% 5%;
+    }
+}
