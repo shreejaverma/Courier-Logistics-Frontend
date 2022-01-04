@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Oswald:wght@300&display=swap');
+
+html, body { width:100%; height:100%; margin:0; padding:0; background-color: #0A1931; font-family: 'Montserrat', sans-serif; overflow-x: hidden;}
+
+.navbarlogo{
+    border-radius: 50%;
+}
+
+.Main{
+    width: 100%;
+    height: 40vw;
+    background-image: url("images/header-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+        
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #0A1931;
+    font-weight: bold;
+}
+
+.main-block, .info {
+    display: flex;
+    flex-direction: column;
+    }
+    .main-block {
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    min-height: 100%;
+    background-color: #0A1931;
+    color: #efefef;
+    }
+    form {
+    width: 80%; 
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #FFC947;
+    border-radius: 1rem;
+    }
+    input, select {
+    padding: 5px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+    }
+    input::placeholder {
+    color: #0A1931;
+    }
+    option {
+    background: #0A1931;
+    color: #FFC947; 
+    border: none;
+    }
+    .purpose {
+    display: flex; 
+    color: #0A1931;
+    }
+    input[type=radio] {
+    display: none;
+    }
+    label.radio {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    text-indent: 32px;
+    cursor: pointer;
+    }
+    label.radio:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #0A1931;
+    }
+    label.radio:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    top: 5px;
+    left: 5px;
+    border-bottom: 3px solid #185ADB;
+    border-left: 3px solid #185ADB;
+    transform: rotate(-45deg);
+    opacity: 0;
+    }
+    input[type=radio]:checked + label:after {
+    opacity: 1;
+    }
+    button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 5px; 
+    background: #0A1931; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #efefef;
+    }
+    button:hover {
+    background: #185ADB;
+    }
+    @media (min-width: 568px) {
+    .info {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    }
+    input {
+    width: 46%;
+    }
+    input.fname {
+    width: 100%;
+    }
+    select {
+    width: 48%;
+    }
+}
+
+.btnSubmit{
+    font-weight: 600;
+    color: #efefef;
+    background-color: #0a1931;
+    margin: 2% 25%;
+    border-radius: 1rem;
+}
